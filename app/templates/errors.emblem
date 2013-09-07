@@ -1,0 +1,4 @@
+ul = each
+  li.well
+    div = name
+    div = body

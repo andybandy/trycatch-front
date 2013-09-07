@@ -1,0 +1,5 @@
+div = name
+ul = each error in app
+  li.well
+    div = name
+    div = body

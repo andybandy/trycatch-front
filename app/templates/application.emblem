@@ -5,9 +5,15 @@
       linkTo "index" class="navbar-brand" | {Trycatch}
     .collapse.navbar-collapse
       ul.nav.navbar-nav
+        linkTo "users" tagName="li"
+          a href="{{view.href}}"
+            | Users
         linkTo "apps" tagName="li"
           a href="{{view.href}}"
-            | Applications
+            | Apps
+        linkTo "errors" tagName="li"
+          a href="{{view.href}}"
+            | Errors
         linkTo "about" tagName="li"
           a href="{{view.href}}"
             | About

@@ -8,16 +8,19 @@ App.ApplicationAdapter = DS.FixtureAdapter.extend()
 require 'templates/application'
 require 'templates/index'
 require 'templates/apps'
+require 'templates/app'
 require 'templates/about'
+require 'templates/users'
+require 'templates/errors'
 
 
 #//////////////////////////////////
 #// Models
 #//////////////////////////////////
 
-require 'models/user'
-require 'models/app'
 require 'models/error'
+require 'models/app'
+require 'models/user'
 
 
 #/////////////////////////////////
@@ -36,8 +39,9 @@ require 'models/error'
 #// Routes
 #/////////////////////////////////
 
-require 'routes/apps_route'
 require 'routes/errors_route'
+require 'routes/apps_route'
+require 'routes/users_route'
 
 #/////////////////////////////////
 #// Store
@@ -55,4 +59,7 @@ App.Router.reopen(
 
 App.Router.map ->
   @route "about", path: "/about"
-  @route "apps", path: "/app"
+  # @route "apps", path: "/app"
+  @resource 'apps', path: "/apps"
+  @resource 'users', path: "/users"
+  @resource 'errors', path: "/errors"
