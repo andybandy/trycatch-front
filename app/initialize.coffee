@@ -59,7 +59,7 @@ App.Router.reopen(
 
 App.Router.map ->
   @route "about", path: "/about"
-  # @route "apps", path: "/app"
+  @route "apps", path: "/app"
   @resource 'apps', path: "/apps"
   @resource 'users', path: "/users"
   @resource 'errors', path: "/errors"
