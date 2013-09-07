@@ -1,5 +1,6 @@
 App.User = DS.Model.extend
   name: DS.attr('string')
+  apps: DS.hasMany('app')
 
 App.User.FIXTURES = [
   {id: 1, name: "user0"}
