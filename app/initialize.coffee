@@ -50,4 +50,4 @@ App.Router.reopen(
 
 App.Router.map ->
   @route "about", path: "/about"
-  @route "index", path: "/"
+  @route "index", path: "/app"

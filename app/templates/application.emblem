@@ -7,7 +7,7 @@
       ul.nav.navbar-nav
         linkTo "index" tagName="li"
           a href="{{view.href}}"
-            | Apps
+            | Applications
         linkTo "about" tagName="li"
           a href="{{view.href}}"
             | About
