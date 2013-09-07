@@ -11,9 +11,9 @@
         linkTo "apps" tagName="li"
           a href="{{view.href}}"
             | Apps
-        linkTo "errors" tagName="li"
+        linkTo "exceptions" tagName="li"
           a href="{{view.href}}"
-            | Errors
+            | Exceptions
         linkTo "about" tagName="li"
           a href="{{view.href}}"
             | About
