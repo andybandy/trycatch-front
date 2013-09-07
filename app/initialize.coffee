@@ -1,4 +1,5 @@
 window.App = require 'app'
+App.ApplicationAdapter = DS.FixtureAdapter.extend()
 
 #//////////////////////////////////
 #// Templates
@@ -6,6 +7,7 @@ window.App = require 'app'
 
 require 'templates/application'
 require 'templates/index'
+require 'templates/apps'
 require 'templates/about'
 
 
@@ -13,6 +15,9 @@ require 'templates/about'
 #// Models
 #//////////////////////////////////
 
+require 'models/user'
+require 'models/app'
+require 'models/error'
 
 
 #/////////////////////////////////
@@ -31,14 +36,14 @@ require 'templates/about'
 #// Routes
 #/////////////////////////////////
 
+require 'routes/application'
 
 
 #/////////////////////////////////
 #// Store
 #/////////////////////////////////
 
-# App.Store = DS.Store.extend
-#   revision: 11
+# require 'models/store'
 
 #/////////////////////////////////
 #// Router
@@ -50,4 +55,4 @@ App.Router.reopen(
 
 App.Router.map ->
   @route "about", path: "/about"
-  @route "index", path: "/app"
+  @route "apps", path: "/app"
