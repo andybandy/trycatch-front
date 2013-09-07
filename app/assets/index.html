@@ -11,6 +11,15 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <script src="/javascripts/trycatch.js"></script>
+    <script>
+      (function() {
+        var catcher = new TryCatch({
+          key: '806265eafc8ff6b72fa028006c86ce928a88112e',
+          host: 'http://trycatch.io'
+        });
+      })();
+    </script>
 
     <script>
         // Enable Brunch HTML/CSS Auto Reload
@@ -29,8 +38,8 @@
     <![endif]-->
 
     <!-- Your Markup -->
-    <script src="javascripts/vendor.js"></script>
-    <script src="javascripts/app.js"></script>
+    <script src="/javascripts/vendor.js"></script>
+    <script src="/javascripts/app.js"></script>
     <script>require('initialize');</script>
 
 

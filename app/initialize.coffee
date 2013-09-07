@@ -8,10 +8,11 @@ App.ApplicationAdapter = DS.FixtureAdapter.extend()
 require 'templates/application'
 require 'templates/index'
 require 'templates/apps'
-require 'templates/apps/index'
+require 'templates/app'
 require 'templates/about'
 require 'templates/users'
 require 'templates/exceptions'
+require 'templates/exception'
 
 
 #//////////////////////////////////
@@ -61,5 +62,7 @@ App.Router.map ->
   @resource "about", path: "/about"
   @resource "index", path: "/"
   @resource "apps", path: "/apps"
+  @resource "app", path: "/apps/:app_id"
+  @resource 'exceptions', path: "/exceptions"
+  @resource 'exception', path: '/exceptions/:exception_id'
   @resource 'users', path: "/users"
-  @resource 'exceptions', path: "/excpetions"
