@@ -2,17 +2,14 @@
 .container
   nav.navbar.navbar-default
     .navbar-header
-      linkTo "index" class="navbar-brand" | Hampsters
+      linkTo "index" class="navbar-brand" | {Trycatch}
     .collapse.navbar-collapse
       ul.nav.navbar-nav
         linkTo "index" tagName="li"
           a href="{{view.href}}"
-            | Home
+            | Apps
         linkTo "about" tagName="li"
           a href="{{view.href}}"
             | About
-
-  p.alert
-    | Main application template Find me in <code>app/templates/application.emblem</code>
 
   #page= outlet

@@ -7,7 +7,6 @@ window.App = require 'app'
 require 'templates/application'
 require 'templates/index'
 require 'templates/about'
-require 'templates/_well'
 
 
 #//////////////////////////////////
