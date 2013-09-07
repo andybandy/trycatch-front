@@ -1,4 +1,5 @@
 ul = each
   li.well
-    div = name
+    linkTo 'exception' id |
+      {{name}}
     div = body

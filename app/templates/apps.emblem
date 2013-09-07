@@ -1,3 +1,4 @@
 ul = each
   li.well
-    = name
+    linkTo 'app' id |
+      {{name}}
