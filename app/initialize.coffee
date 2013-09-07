@@ -36,7 +36,7 @@ require 'models/error'
 #// Routes
 #/////////////////////////////////
 
-require 'routes/application'
+require 'routes/apps_route'
 
 
 #/////////////////////////////////
