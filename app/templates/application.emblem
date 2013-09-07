@@ -5,11 +5,13 @@
       linkTo "index" class="navbar-brand" | {Trycatch}
     .collapse.navbar-collapse
       ul.nav.navbar-nav
-        linkTo "index" tagName="li"
+        linkTo "apps" tagName="li"
           a href="{{view.href}}"
             | Applications
         linkTo "about" tagName="li"
           a href="{{view.href}}"
             | About
+        li
+          a href="/signout" Signout
 
   #page= outlet
