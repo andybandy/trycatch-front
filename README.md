@@ -1,4 +1,5 @@
 # Brunch with Hampsters
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/andybandy/trycatch-front?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![](http://cl.ly/image/0z3D3Q0t2b1s/hampster.jpeg)
 
